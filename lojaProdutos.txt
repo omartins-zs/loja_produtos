@@ -7,4 +7,14 @@ CREATE DATABASE loja_produtos
 CREATE TABLE `loja_produtos`.`pedidos` ( `id` INT NOT NULL AUTO_INCREMENT , `iduser` INT NOT NULL , `produto` INT NOT NULL , `valor` VARCHAR(100) NOT NULL , `referencia` VARCHAR(100) NOT NULL , `status` VARCHAR(100) NOT NULL , `data` VARCHAR(30) NOT NULL , `hash` VARCHAR NOT NULL , PRIMARY KEY (`id`, `iduser`)) ENGINE = InnoDB;
 
 
+CREATE TABLE `produtos` (
+  `id` int(11) NOT NULL,
+  `valor` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `nome` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `hash_file` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `name_file` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `img` varchar(100) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
 https://www.youtube.com/playlist?list=PLQ9wPE-0hJoUcakqAVp7CHHVTElA_OhRg
