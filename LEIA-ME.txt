@@ -1,0 +1,24 @@
+1 - Faça As configurações de conexão com o banco de dados no arquivo "class/Conn.class.php"
+
+2 - Importe o arquivo "banco_de_dados.sql" para o banco de dados criado.
+
+3 - Altere suas credencias do mercadopago na tabela "credencias_mp".
+
+4 - Pegue suas credencias do mercado pago acessando: 
+https://www.mercadopago.com/mlb/account/credentials?type=basic
+
+OBSERVAÇÃO:
+
+Infelizmente desabilitamos nossa Api do whatsapp, mas pode usar o modelo implmentado para utilizar outros
+serviços de api citarei abaixo alguns sites que oferecem este serviço.
+
+ - https://www.solutek.online/
+ - https://rapiwha.com/
+ - https://chat-api.com/
+ - https://wsapp.com.br/
+ - https://api.chatpro.com.br/
+ - https://z-api.io
+ - https://whatsgw.com.br/
+ - https://winzap.com.br/
+ - https://www.blip.ai/
+	

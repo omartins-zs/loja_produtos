@@ -7,6 +7,25 @@ CREATE DATABASE loja_produtos
 CREATE TABLE `loja_produtos`.`pedidos` ( `id` INT NOT NULL AUTO_INCREMENT , `iduser` INT NOT NULL , `produto` INT NOT NULL , `valor` VARCHAR(100) NOT NULL , `referencia` VARCHAR(100) NOT NULL , `status` VARCHAR(100) NOT NULL , `data` VARCHAR(30) NOT NULL , `hash` VARCHAR NOT NULL , PRIMARY KEY (`id`, `iduser`)) ENGINE = InnoDB;
 
 
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `whatsapp` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `senha` varchar(100) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `whatsapp`, `senha`) VALUES
+(2, 'Rafael teste', 'mail@gmail.com', '554598339113', '123123'),
+(3, 'Teste', 'dfdfds@gmail.com', '55454545454545', '123123');
+
+
+
+
 CREATE TABLE `produtos` (
   `id` int(11) NOT NULL,
   `valor` varchar(100) COLLATE utf8_unicode_ci NOT NULL,

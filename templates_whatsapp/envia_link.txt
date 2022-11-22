@@ -1,0 +1,9 @@
+Olá {nome_cliente}.
+
+Seu pagamento foi confirmado!
+
+Link para download: {link}
+
+
+*Valor:* {valor}
+*Forma:* {forma}
