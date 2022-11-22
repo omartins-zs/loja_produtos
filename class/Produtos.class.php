@@ -27,4 +27,21 @@ class Produtos extends Conn
 			return false;
 		}
 	}
+	
+	public function getProdutoById($id){
+		$query = $this->pdo->prepare("SELECT * FROM `produtos` WHERE id= :id  ");
+		$query->bindValue(':id', $id);
+		if($query->execute()){
+	
+		  $query = $this->pdo->query("SELECT * FROM `produtos` WHERE id='$id' ");
+		  $fetch = $query->fetch(PDO::FETCH_OBJ);
+		  return $fetch;
+	
+		}else{
+		  return false;
+		}
+	  }
 }
+
+
+
